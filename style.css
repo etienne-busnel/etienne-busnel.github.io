@@ -211,6 +211,8 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  width: auto;
+  object-fit: contain;
 }
 
 /* BUTTONS */
@@ -219,6 +221,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .btn {
@@ -268,9 +271,11 @@ section {
 }
 
 .about-containers {
+  display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .about-details-container {
@@ -294,6 +299,10 @@ section {
 }
 
 .details-container {
+  flex: 1;             
+  display: flex;       
+  flex-direction: column;
+  justify-content: center;
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -331,6 +340,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .article-container {
@@ -360,6 +370,11 @@ article .icon {
 }
 
 .color-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 280px;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
